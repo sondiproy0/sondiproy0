@@ -19,7 +19,6 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | Api Security                                  |
 
 ## Tools
-[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
 
 ### Automatic Scanning
 <div>
@@ -51,16 +50,17 @@ My journey in computer science has led me to develop a passion for cybersecurity
 </div>
 
 
-///## Certifications
-[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
+## Self-learned
 <div>
-<img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" />
-</div>///
+    <img src="https://img.shields.io/badge/-Network%2B-00AEEF?style=for-the-badge&logo=CompTIA&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Security%2B-003B57?style=for-the-badge&logo=CompTIA&logoColor=white" />
+</div>
 
+## Training
+- Cyber Security and Ethical Hacking (Arena Web Security)
+- Server Administration Including Windows Server (BASIS SEIP)
+- CCNA (PeopleNTech Ltd.)
+  
 ## Projects
-- Detection Lab
-- SOC Automation Project
+- OWASP Juice-shop
+- CTF Write-ups
