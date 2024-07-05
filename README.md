@@ -15,14 +15,13 @@ My journey in computer science has led me to develop a passion for cybersecurity
 | VAPT                                          | <a href="https://google.com">Detection Lab</a>|
 | Penetration Testing                           | <a href="https://google.com">Detection Lab</a>|
 | Vulnerabilities Assessments                   | SOC Automation Lab|
-|       | SOC Automation Lab|
-| Case Management with TheHive                  | SOC Automation Lab|
-| Scripting and Automation for Threat Mitigation | SOC Automation Lab|
+| Web Application Security                      | SOC Automation Lab|
+| Api Security                                  | SOC Automation Lab|
 
 ## Tools
 [Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
 
-### Automatic Scanning Tools
+### Automatic Scanning
 <div>
     <img src="https://img.shields.io/badge/-Nessus-289BF1?style=for-the-badge&logo=Nessus&logoColor=white" />
     <img src="https://img.shields.io/badge/-Acunetix-000000?style=for-the-badge&logo=Acunetix&logoColor=white" />
@@ -32,14 +31,23 @@ My journey in computer science has led me to develop a passion for cybersecurity
 ### Network
 <div>
     <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
 </div>
 
-### Endpoint
+### Kali Tools
 <div>
-    <img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Burp_Suite-FF6347?style=for-the-badge&logo=BurpSuite&logoColor=white" />
+    <img src="https://img.shields.io/badge/-nmap-2C2D72?style=for-the-badge&logo=nmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nikto-000000?style=for-the-badge&logo=Nikto&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nuclei-4C566A?style=for-the-badge&logo=Nuclei&logoColor=white" />
+    <img src="https://img.shields.io/badge/-sqlmap-CC0000?style=for-the-badge&logo=sqlmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-dirsearch-008000?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-ffuf-00599C?style=for-the-badge&logo=Go&logoColor=white" />
+    <img src="https://img.shields.io/badge/-httpx-FF5733?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-subfinder-FF8C00?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Katana-FF69B4?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-gau-24292F?style=for-the-badge&logo=GitHub&logoColor=white" />
+    <img src="https://img.shields.io/badge/-John_the_Ripper-272822?style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Hashcat-3498DB?style=for-the-badge&logo=Hashcat&logoColor=white" />
 </div>
 
 
