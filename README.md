@@ -62,5 +62,5 @@ My journey in computer science has led me to develop a passion for cybersecurity
 - CCNA (PeopleNTech Ltd.)
   
 ## Projects
-- OWASP Juice-shop
-- CTF Write-ups
+- <a href="https://your-url-here.com">CTF Write-ups</a>
+- OWASP Juice-shop (VAPT)
