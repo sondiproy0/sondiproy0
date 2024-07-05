@@ -10,13 +10,13 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 ## Skills
 
-| Skill                                         | Associated Project         |
-|-----------------------------------------------|----------------------------|
-| VAPT                                          | <a href="https://google.com">Detection Lab</a>|
-| Penetration Testing                           | <a href="https://google.com">Detection Lab</a>|
-| Vulnerabilities Assessments                   | SOC Automation Lab|
-| Web Application Security                      | SOC Automation Lab|
-| Api Security                                  | SOC Automation Lab|
+| Skill                                         |
+|-----------------------------------------------|
+| VAPT                                          |
+| Penetration Testing                           |
+| Vulnerabilities Assessments                   |
+| Web Application Security                      |
+| Api Security                                  |
 
 ## Tools
 [Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
@@ -51,7 +51,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 </div>
 
 
-## Certifications
+///## Certifications
 [Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
 <div>
 <img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
@@ -59,7 +59,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 <img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" />
 <img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" />
 <img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" />
-</div>
+</div>///
 
 ## Projects
 - Detection Lab
