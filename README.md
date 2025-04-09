@@ -2,7 +2,7 @@
 <a href="https://www.linkedin.com/in/sondiproy0/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>  
 `Cyber Security Enthusiast | eJPT Certified | CTF Player`  
 
-> *"Turning vulnerabilities into lessons since 2018."*  
+> *"With Great Power Comes Great Electricty Bill"*  
 
 ---
 
@@ -11,10 +11,9 @@ Recent Computer Science graduate with a passion for **penetration testing** and 
 
 ---
 
-## 🛠️ **Skills**  
-*(Your iconic badge layout - preserved exactly as you like it!)*  
+## 🛠️ **Skills** 
 
-### Reconnaissance  
+### Reconnaissance
 <div>
     <img src="https://img.shields.io/badge/-Nmap-259DAD?style=for-the-badge&logo=Nmap&logoColor=white" />
     <img src="https://img.shields.io/badge/-Masscan-000000?style=for-the-badge&logo=Masscan&logoColor=white" />
@@ -22,7 +21,7 @@ Recent Computer Science graduate with a passion for **penetration testing** and 
     <img src="https://img.shields.io/badge/-Amass-8A2BE2?style=for-the-badge&logo=Amass&logoColor=white" />
 </div>
 
-### Protocol Exploitation  
+### Protocol Exploitation
 <div>
     <img src="https://img.shields.io/badge/-SMB-5C5C5C?style=for-the-badge&logo=Windows-Terminal&logoColor=white" />
     <img src="https://img.shields.io/badge/-FTP-FF6600?style=for-the-badge&logo=FileZilla&logoColor=white" />
@@ -31,13 +30,44 @@ Recent Computer Science graduate with a passion for **penetration testing** and 
     <img src="https://img.shields.io/badge/-HTTP%2FHTTPS-FF5722?style=for-the-badge&logo=Internet-Explorer&logoColor=white" />
 </div>
 
-*(All other skill sections from your original README remain unchanged...)*  
+### Vulnerability Scanning
+<div>
+    <img src="https://img.shields.io/badge/-Nessus-289BF1?style=for-the-badge&logo=Nessus&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nikto-000000?style=for-the-badge&logo=Nikto&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nuclei-00BFFF?style=for-the-badge&logo=Nuclei&logoColor=white" />
+    <img src="https://img.shields.io/badge/-WPScan-259DAD?style=for-the-badge&logo=WPScan&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Droopescan-8A2BE2?style=for-the-badge&logo=Droopescan&logoColor=white" />
+</div>
+
+### Directory Brute Forcing
+<div>
+    <img src="https://img.shields.io/badge/-Gobuster-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+    <img src="https://img.shields.io/badge/-FFuf-111111?style=for-the-badge&logo=ffuf&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Dirbuster-DD4B35?style=for-the-badge&logo=kali-linux&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Dirsearch-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+</div>
+
+### Security Tools
+<div>
+    <img src="https://img.shields.io/badge/-Metasploit-EB340A?style=for-the-badge&logo=metasploit&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SQLmap-000000?style=for-the-badge&logo=sqlmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Mimikatz-0078D6?style=for-the-badge&logo=microsoft&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Hashcat-000000?style=for-the-badge&logo=hashcat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-John%20the%20Ripper-D90F0F?style=for-the-badge&logo=johntheripper&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SecLists-4B9CD3?style=for-the-badge&logo=bookstack&logoColor=white" />
+</div>
+
+### Analysis
+<div>
+    <img src="https://img.shields.io/badge/-Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
+</div>  
 
 ---
 
 ## 🏆 **Certifications**  
 <div align="center">
-  <a href="https://elearnsecurity.com/verify-certificate">
+  <a href="<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7308393632170917892?collapsed=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>">
     <img src="https://img.shields.io/badge/eJPT-Certified-red?style=for-the-badge&logo=linux" alt="eJPT">
   </a>
   <a href="https://www.theforage.com">
