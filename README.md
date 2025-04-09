@@ -67,7 +67,7 @@ Recent Computer Science graduate with a passion for **penetration testing** and 
 
 ## 🏆 **Certifications**  
 <div align="center">
-  <a href="<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7308393632170917892?collapsed=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>">
+  <a href="https://certs.ine.com/d643ae67-a742-46d8-85e9-5a2af5123707#acc.2O6j8D5F">
     <img src="https://img.shields.io/badge/eJPT-Certified-red?style=for-the-badge&logo=linux" alt="eJPT">
   </a>
   <a href="https://www.theforage.com">
