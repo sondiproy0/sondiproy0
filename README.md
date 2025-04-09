@@ -27,21 +27,13 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-HTTP%2FHTTPS-FF5722?style=for-the-badge&logo=Internet-Explorer&logoColor=white" />
 </div>
 
-### Kali Tools
+### Vulnerability Scanning
 <div>
-    <img src="https://img.shields.io/badge/-Burp_Suite-FF6347?style=for-the-badge&logo=BurpSuite&logoColor=white" />
-    <img src="https://img.shields.io/badge/-nmap-2C2D72?style=for-the-badge&logo=nmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nessus-289BF1?style=for-the-badge&logo=Nessus&logoColor=white" />
     <img src="https://img.shields.io/badge/-Nikto-000000?style=for-the-badge&logo=Nikto&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Nuclei-4C566A?style=for-the-badge&logo=Nuclei&logoColor=white" />
-    <img src="https://img.shields.io/badge/-sqlmap-CC0000?style=for-the-badge&logo=sqlmap&logoColor=white" />
-    <img src="https://img.shields.io/badge/-dirsearch-008000?style=for-the-badge&logoColor=white" />
-    <img src="https://img.shields.io/badge/-ffuf-00599C?style=for-the-badge&logo=Go&logoColor=white" />
-    <img src="https://img.shields.io/badge/-httpx-FF5733?style=for-the-badge&logoColor=white" />
-    <img src="https://img.shields.io/badge/-subfinder-FF8C00?style=for-the-badge&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Katana-FF69B4?style=for-the-badge&logoColor=white" />
-    <img src="https://img.shields.io/badge/-gau-24292F?style=for-the-badge&logo=GitHub&logoColor=white" />
-    <img src="https://img.shields.io/badge/-John_the_Ripper-272822?style=for-the-badge&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Hashcat-3498DB?style=for-the-badge&logo=Hashcat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nuclei-00BFFF?style=for-the-badge&logo=Nuclei&logoColor=white" />
+    <img src="https://img.shields.io/badge/-WPScan-259DAD?style=for-the-badge&logo=WPScan&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Droopescan-8A2BE2?style=for-the-badge&logo=Droopescan&logoColor=white" />
 </div>
 
 
