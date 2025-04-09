@@ -10,16 +10,6 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 ## Skills
 
-| Skill                                         |
-|-----------------------------------------------|
-| Penetration Testing                           |
-| Vulnerabilities Assessments                   |
-| Web Application Penetration Testing           |
-| Network Security                              |
-
-## Tools
-
-### Reconnaissance
 ### Reconnaissance
 <div>
     <img src="https://img.shields.io/badge/-Nmap-259DAD?style=for-the-badge&logo=Nmap&logoColor=white" />
@@ -28,9 +18,13 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Amass-8A2BE2?style=for-the-badge&logo=Amass&logoColor=white" />
 </div>
 
-### Network
+### Protocol Exploitation
 <div>
-    <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SMB-5C5C5C?style=for-the-badge&logo=Windows-Terminal&logoColor=white" />
+    <img src="https://img.shields.io/badge/-FTP-FF6600?style=for-the-badge&logo=FileZilla&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SSH-000000?style=for-the-badge&logo=GNU-Bash&logoColor=white" />
+    <img src="https://img.shields.io/badge/-RDP-0078D4?style=for-the-badge&logo=Microsoft-Remote-Desktop&logoColor=white" />
+    <img src="https://img.shields.io/badge/-HTTP%2FHTTPS-FF5722?style=for-the-badge&logo=Internet-Explorer&logoColor=white" />
 </div>
 
 ### Kali Tools
