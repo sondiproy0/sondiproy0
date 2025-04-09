@@ -70,10 +70,10 @@ Recent Computer Science graduate with a passion for **penetration testing** and 
   <a href="https://certs.ine.com/d643ae67-a742-46d8-85e9-5a2af5123707#acc.2O6j8D5F">
     <img src="https://img.shields.io/badge/eJPT-Certified-red?style=for-the-badge&logo=linux" alt="eJPT">
   </a>
-  <a href="https://www.theforage.com">
+  <a href="https://certs.ine.com/bedcf189-48d3-4ac4-8f37-c5ba99fcdb3b?username=sondiproy732006">
     <img src="https://img.shields.io/badge/AIG-Shields_Up-0077B5?style=for-the-badge&logo=aig" alt="AIG">
   </a>
-  <a href="https://www.theforage.com">
+  <a href="https://certs.ine.com/daf99dec-0cc1-4f65-b1a4-b677f771c3e8?username=sondiproy732006">
     <img src="https://img.shields.io/badge/Mastercard-Cyber_Defense-FF6C37?style=for-the-badge&logo=mastercard" alt="Mastercard">
   </a>
 </div>
