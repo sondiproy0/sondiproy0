@@ -36,6 +36,30 @@ My journey in computer science has led me to develop a passion for cybersecurity
     <img src="https://img.shields.io/badge/-Droopescan-8A2BE2?style=for-the-badge&logo=Droopescan&logoColor=white" />
 </div>
 
+### Directory Brute Forcing
+<div>
+    <img src="https://img.shields.io/badge/-Gobuster-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+    <img src="https://img.shields.io/badge/-FFuf-111111?style=for-the-badge&logo=ffuf&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Dirbuster-DD4B35?style=for-the-badge&logo=kali-linux&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Dirsearch-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+</div>
+
+### Security Tools
+<div>
+    <img src="https://img.shields.io/badge/-Metasploit-EB340A?style=for-the-badge&logo=metasploit&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SQLmap-000000?style=for-the-badge&logo=sqlmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Mimikatz-0078D6?style=for-the-badge&logo=microsoft&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Hashcat-000000?style=for-the-badge&logo=hashcat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-John%20the%20Ripper-D90F0F?style=for-the-badge&logo=johntheripper&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SecLists-4B9CD3?style=for-the-badge&logo=bookstack&logoColor=white" />
+</div>
+
+### Analysis
+<div>
+    <img src="https://img.shields.io/badge/-Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
+</div>
+
 
 ## Self-learned
 <div>
