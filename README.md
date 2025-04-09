@@ -12,19 +12,20 @@ My journey in computer science has led me to develop a passion for cybersecurity
 
 | Skill                                         |
 |-----------------------------------------------|
-| VAPT                                          |
 | Penetration Testing                           |
 | Vulnerabilities Assessments                   |
-| Web Application Security                      |
-| Api Security                                  |
+| Web Application Penetration Testing           |
+| Network Security                              |
 
 ## Tools
 
-### Automatic Scanning
+### Reconnaissance
+### Reconnaissance
 <div>
-    <img src="https://img.shields.io/badge/-Nessus-289BF1?style=for-the-badge&logo=Nessus&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Acunetix-000000?style=for-the-badge&logo=Acunetix&logoColor=white" />
-    <img src="https://img.shields.io/badge/-OpenVAS-2B2D42?style=for-the-badge&logo=OpenVAS&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nmap-259DAD?style=for-the-badge&logo=Nmap&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Masscan-000000?style=for-the-badge&logo=Masscan&logoColor=white" />
+    <img src="https://img.shields.io/badge/-theHarvester-FFA500?style=for-the-badge&logo=theHarvester&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Amass-8A2BE2?style=for-the-badge&logo=Amass&logoColor=white" />
 </div>
 
 ### Network
