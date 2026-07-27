@@ -119,19 +119,18 @@ export default function Hero() {
             />
             {/* subtle overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-page/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
+            {/* quote badge */}
+            <motion.span
+              initial={reduced ? false : { opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, delay: 0.2, ease: EASE }}
+              className="absolute bottom-3 left-3 rounded-md bg-accent/90 px-2.5 py-1 font-mono text-[10px] font-semibold tracking-wide text-page backdrop-blur-sm"
+              aria-hidden="true"
+            >
+              "Assume breach."
+            </motion.span>
           </div>
         </div>
-
-        {/* ── quote ──────────────────────── */}
-        <motion.p
-          initial={reduced ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.2, delay: 0.2, ease: EASE }}
-          className="mt-5 text-center font-mono text-xs tracking-wide text-muted/50"
-          aria-hidden="true"
-        >
-          "Assume breach."
-        </motion.p>
       </motion.div>
     </section>
   )
