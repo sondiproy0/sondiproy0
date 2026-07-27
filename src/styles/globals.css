@@ -31,16 +31,24 @@ body {
 }
 
 .skip-link {
-  position: absolute;
-  left: 0; top: 0;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
   background: var(--color-accent);
   color: var(--color-page);
   padding: 8px 12px;
-  transform: translateY(-120%);
-  transition: transform 200ms ease;
+  transform: translateY(-150%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 200ms ease, opacity 200ms ease;
   z-index: 60;
 }
-.skip-link:focus { transform: translateY(0%); outline: none; }
+.skip-link:focus {
+  transform: translateY(0);
+  opacity: 1;
+  outline: none;
+  pointer-events: auto;
+}
 
 :focus-visible {
   outline: 2px solid var(--color-accent);
