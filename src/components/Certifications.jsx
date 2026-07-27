@@ -23,40 +23,40 @@ export default function Certifications() {
 
   return (
     <section id="certs" className="section-rule py-16 lg:py-20">
-      <div className="grid gap-10 lg:grid-cols-[.38fr_1fr]">
-        <div>
-          <p className="eyebrow">05 / Credentials</p>
-          <h2 className="section-title mt-4 text-white">Trusted<br />foundations.</h2>
-          <p className="mt-4 max-w-xs text-sm leading-6 text-muted">
-            Industry certifications and vendor partnerships shaping my practice.
-          </p>
-        </div>
+      {/* ── header ─────────────────────────────────────── */}
+      <div className="text-center">
+        <p className="eyebrow">05 / Credentials</p>
+        <h2 className="section-title mt-4 text-white">Trusted foundations.</h2>
+        <p className="mx-auto mt-4 max-w-sm text-sm leading-6 text-muted">
+          Industry certifications and vendor partnerships shaping my practice.
+        </p>
+      </div>
 
-        <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4">
-          {badges.map((b, i) => (
-            <motion.div
-              key={b.name}
-              initial={r ? {} : { opacity: 0, y: 12 }}
-              whileInView={r ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.04, duration: 0.2, ease: EASE }}
-              className="group flex aspect-square items-center justify-center rounded-xl border border-white/[.06] bg-card px-4 py-5 transition-all duration-300 hover:border-accent/30 hover:bg-[#151f2e]"
-            >
-              {b.img ? (
-                <img
-                  src={b.img}
-                  alt={b.name}
-                  loading="lazy"
-                  className="max-h-full max-w-full object-contain opacity-70 grayscale-[.2] transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
-                />
-              ) : (
-                <span className="font-heading text-lg font-bold text-white/60 transition-colors duration-300 group-hover:text-white/90 sm:text-xl">
-                  {b.name}
-                </span>
-              )}
-            </motion.div>
-          ))}
-        </div>
+      {/* ── badge grid ─────────────────────────────────── */}
+      <div className="mt-10 grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-6">
+        {badges.map((b, i) => (
+          <motion.div
+            key={b.name}
+            initial={r ? {} : { opacity: 0, y: 12 }}
+            whileInView={r ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.04, duration: 0.2, ease: EASE }}
+            className="group flex aspect-square items-center justify-center rounded-xl border border-white/[.06] bg-card px-4 py-5 transition-all duration-300 hover:border-accent/30 hover:bg-[#151f2e]"
+          >
+            {b.img ? (
+              <img
+                src={b.img}
+                alt={b.name}
+                loading="lazy"
+                className="max-h-full max-w-full object-contain opacity-70 grayscale-[.2] transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+              />
+            ) : (
+              <span className="font-heading text-lg font-bold text-white/60 transition-colors duration-300 group-hover:text-white/90 sm:text-xl">
+                {b.name}
+              </span>
+            )}
+          </motion.div>
+        ))}
       </div>
     </section>
   )
