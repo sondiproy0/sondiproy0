@@ -9,10 +9,10 @@ const badges = [
   { name: 'FCA', img: '/certifications/fortinet-fca-clean.png' },
   { name: 'SentinelOne', img: '/certifications/sentinelone-dark.png' },
   { name: 'Trend Micro', img: '/certifications/trendmicro-dark.png' },
-  { name: 'Kaspersky', img: null },
+  { name: 'Kaspersky', img: '/certifications/kaspersky.png' },
   { name: 'Wazuh', img: '/certifications/wazuh.png' },
   { name: 'Red Hat', img: '/certifications/redhat-dark.png' },
-  { name: 'Microsoft', img: null },
+  { name: 'Microsoft', img: '/certifications/microsoft.png' },
   { name: 'Zecurion', img: '/certifications/zecurion.png' }
 ]
 
