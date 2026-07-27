@@ -65,15 +65,14 @@ export default function Header() {
 
   return (
     <motion.header
-      initial={reduced ? false : { y: -24, opacity: 0 }}
+      initial={reduced ? false : { y: -16, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-4xl -translate-x-1/2 rounded-2xl border backdrop-blur-2xl transition-[border-color,box-shadow] duration-300 ${
+      transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+      className={`fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-4xl -translate-x-1/2 rounded-2xl border backdrop-blur-2xl transition-[border-color,box-shadow] duration-200 ${
         scrolled
           ? 'border-white/[.12] bg-surface/80 shadow-nav'
           : 'border-white/[.06] bg-surface/60 shadow-none'
       }`}
-      role="banner"
     >
       <div className="flex items-center justify-between px-4 py-3 sm:px-6">
         {/* ── logo ──────────────────────────────────── */}
@@ -88,7 +87,6 @@ export default function Header() {
         {/* ── desktop nav ───────────────────────────── */}
         <nav
           ref={navRef}
-          role="navigation"
           aria-label="Main navigation"
           className="relative hidden items-center gap-0.5 md:flex"
         >
@@ -125,7 +123,7 @@ export default function Header() {
 
         {/* ── hamburger ──────────────────────────────── */}
         <button
-          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg text-accent transition-colors duration-200 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface md:hidden"
+          className="relative z-50 flex h-11 w-11 items-center justify-center rounded-lg text-accent transition-colors duration-200 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface md:hidden"
           onClick={() => setOpen(o => !o)}
           aria-expanded={open}
           aria-controls="mobile-nav"
@@ -159,9 +157,8 @@ export default function Header() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden border-t border-white/[.08] md:hidden"
-            role="navigation"
             aria-label="Mobile navigation"
           >
             <div className="space-y-0.5 px-3 pb-3 pt-2">
@@ -170,7 +167,7 @@ export default function Header() {
                   key={link.id}
                   initial={reduced ? false : { x: -12, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={reduced ? { duration: 0 } : { delay: i * 0.04, duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  transition={reduced ? { duration: 0 } : { delay: i * 0.04, duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
                   onClick={() => go(link.id)}
                   aria-current={active === link.id ? 'true' : undefined}
                   className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface ${

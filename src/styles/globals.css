@@ -78,17 +78,7 @@ button, a, input, textarea {
     line-height: 0.96;
   }
 
-  .soft-card {
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid var(--color-line-light);
-  }
 
-  .card-hover {
-    @apply transition-all duration-slow ease-smooth;
-  }
-  .card-hover:hover {
-    @apply -translate-y-1 border-accent/70;
-  }
 }
 
 @keyframes drift {
@@ -106,11 +96,6 @@ button, a, input, textarea {
   50% { transform: translateY(-8px); }
 }
 
-@keyframes pan-slow {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 0%; }
-}
-
 .orb-drift { animation: drift 12s ease-in-out infinite; }
 
 .gradient-text {
@@ -122,5 +107,15 @@ button, a, input, textarea {
   animation: shimmer 8s linear infinite;
 }
 
-.animate-float-soft { animation: float-soft 9s ease-in-out infinite; }
-.animate-pan-slow { animation: pan-slow 30s linear infinite; }
+/* ── SecurityExpertise topology ───────────────────────── */
+.t-line{stroke-dasharray:5 15;animation:dash 1.5s linear infinite}
+.t-pulse{animation:pulse 3s ease-in-out infinite}
+@keyframes dash{to{stroke-dashoffset:-20}}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:.6}}
+.t-node{cursor:pointer}
+.t-node .t-ring{transition:fill .25s,stroke .25s,stroke-width .25s,transform .25s;transform-origin:center}
+.t-node:hover .t-glow{opacity:.85!important}
+.t-node:hover .t-ring{stroke:#38BDF8!important;stroke-width:1.5!important;transform:scale(1.06)}
+.t-node:hover .t-label{fill:#f1f5fa!important}
+.t-node:focus-visible .t-ring{stroke:#38BDF8;stroke-width:1.5;outline:none;transform:scale(1.06)}
+.t-node:focus-visible .t-label{fill:#f1f5fa}

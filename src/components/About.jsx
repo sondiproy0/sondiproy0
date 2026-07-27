@@ -2,11 +2,11 @@ import React from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
 const metrics = [
-  ['2+', 'Years securing systems'],
-  ['15+', 'Assessments delivered'],
+  ['2+', 'Years of experience'],
+  ['15+', 'Security assessments'],
   ['800+', 'Students mentored'],
-  ['eJPT', 'Offensive security'],
-  ['PT1', 'Practical testing']
+  ['Enterprise', 'Security focus'],
+  ['MITRE', 'Methodologies']
 ]
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
         viewport={{ once: true }}
       >
         <p className="eyebrow">01 / About</p>
-        <h2 className="section-title mt-5 text-white">Security that makes a difference.</h2>
+        <h2 className="section-title mt-4 text-white">Security that makes a difference.</h2>
         <p className="mt-6 max-w-md leading-prose text-muted">
           Cybersecurity Engineer focused on practical defense: discovering risk, creating meaningful visibility, and helping teams act on the findings that matter.
         </p>

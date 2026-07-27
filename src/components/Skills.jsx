@@ -131,19 +131,18 @@ export default function Skills() {
       </div>
 
       <div className="relative z-10">
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="eyebrow">04 / Capabilities</p>
             <h2 className="section-title mt-4 text-white">Security capabilities with context.</h2>
           </div>
-          <p className="max-w-xl text-sm leading-7 text-muted">
-            Six capability groups describing what I do, how I do it, and the tools I use. Click to expand.
+          <p className="max-w-sm text-xs leading-6 text-muted">
+            Six capability groups. Click to expand.
           </p>
         </div>
 
-        <div
-          className="mt-10 grid gap-3 md:grid-cols-2 xl:grid-cols-4"
-          role="list"
+        <ul
+          className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-3"
           aria-label="Security capabilities"
         >
           {capabilities.map((card, index) => (
@@ -156,7 +155,7 @@ export default function Skills() {
               reduced={reduced}
             />
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   )
@@ -168,12 +167,11 @@ function CapCard({ card, index, expanded, onToggle, reduced }) {
   const previewTools = card.tools.slice(0, 3)
 
   return (
-    <motion.article
-      role="listitem"
+    <motion.li
       initial={reduced ? {} : { opacity: 0, y: 20 }}
       whileInView={reduced ? {} : { opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
-      transition={{ delay: index * 0.06, duration: 0.5, ease: EASE }}
+      transition={{ delay: index * 0.05, duration: 0.25, ease: EASE }}
       className={`group relative flex flex-col overflow-hidden rounded-card-lg border transition-colors duration-300 ${
         expanded
           ? 'border-accent/40 bg-slate-950/40 shadow-card-sm'
@@ -206,7 +204,7 @@ function CapCard({ card, index, expanded, onToggle, reduced }) {
             <motion.span
               aria-hidden="true"
               animate={{ rotate: expanded ? 180 : 0 }}
-              transition={{ duration: 0.25, ease: EASE }}
+              transition={{ duration: 0.2, ease: EASE }}
               className="mt-0.5 shrink-0 text-[10px] text-muted"
             >
               ▾
@@ -251,7 +249,7 @@ function CapCard({ card, index, expanded, onToggle, reduced }) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: EASE }}
+            transition={{ duration: 0.2, ease: EASE }}
             className="overflow-hidden"
           >
             <div className="space-y-4 border-t border-white/[.06] px-4 pt-4 pb-5 sm:px-5">
@@ -337,6 +335,6 @@ function CapCard({ card, index, expanded, onToggle, reduced }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.article>
+    </motion.li>
   )
 }
