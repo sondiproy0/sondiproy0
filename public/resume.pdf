@@ -1,0 +1,77 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 900 >>
+stream
+BT
+/F1 12 Tf
+50 740 Td
+(Sondip Roy) Tj
+0 -18 Td
+(Security Operations Engineer | Detection Engineering | Incident Response | Cloud Security) Tj
+0 -24 Td
+(Contact: +8801616-014176  •  sondiproy4321@gmail.com) Tj
+0 -30 Td
+(SUMMARY) Tj
+0 -18 Td
+(Cybersecurity Engineer with 2+ years of hands-on experience in security operations, detection engineering, and penetration testing across enterprise environments. Proven track record deploying and operating EDR and SIEM platforms at scale, building and tuning detection rules to reduce false positives, and conducting web/network penetration testing aligned to OWASP Top 10 and MITRE ATT&CK.) Tj
+0 -18 Td
+(Experienced with cloud security posture management (CTEM/CSPM), malware analysis, and incident triage. Pursuing OSCP; holds eJPT, CNSP, and PT1 certifications.) Tj
+0 -24 Td
+(EXPERIENCE) Tj
+0 -18 Td
+(Cybersecurity Engineer — Betopia Limited, Dhaka | Oct 2025 – Present) Tj
+0 -18 Td
+(• Deployed and operationalized Kaspersky EDR Expert across 815 endpoints spanning 16 strategic business units; authored endpoint security policies, exclusion rules, and response playbooks.) Tj
+0 -18 Td
+(• Operated enterprise SIEM (Wazuh): developed and tuned custom correlation rules, performed alert triage, incident investigation, and escalation.) Tj
+0 -18 Td
+(• Conducted web and network penetration tests aligned with OWASP Top 10, PTES, and MITRE ATT&CK; identified 15+ vulnerabilities per engagement.) Tj
+0 -18 Td
+(Jr Executive – IT & Cybersecurity — Neuratech Ltd | 2024) Tj
+0 -18 Td
+(• Managed 50+ user accounts via Active Directory; enforced IAM policies and password hardening.) Tj
+0 -24 Td
+(CORE SKILLS & TOOLS) Tj
+0 -18 Td
+(Detection Engineering & SIEM: Wazuh, Correlation Rule Development, Detection Use Cases, Log Analysis, MITRE ATT&CK Mapping) Tj
+0 -18 Td
+(EDR & Endpoint Security: Kaspersky EDR Expert, SentinelOne) Tj
+0 -18 Td
+(Incident Response: Forensics, Malware Analysis, IOC Analysis, Sandbox Analysis) Tj
+0 -18 Td
+(Application Security: SonarQube, Burp Suite, SAST/DAST, OWASP Top 10) Tj
+0 -18 Td
+(Cloud Security & IAM: AppAcuity CTEM/CSPM, Entra ID, Conditional Access, Defender) Tj
+0 -24 Td
+(CERTIFICATIONS & TRAINING) Tj
+0 -18 Td
+(eJPT, CNSP, ICCA, Fortinet NSE 1–3, CCNA 200-301, PT1 (INE), Windows Server Administration, OSCP (In Progress)) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000067 00000 n 
+0000000123 00000 n 
+0000000200 00000 n 
+0000001400 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1600
+%%EOF
