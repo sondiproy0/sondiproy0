@@ -3,24 +3,45 @@ import { motion, useReducedMotion } from 'framer-motion'
 
 const EASE = [0.22, 1, 0.36, 1]
 
-const badges = [
+const certs = [
   { name: 'eJPT', img: '/certifications/ejpt-clean.png' },
   { name: 'PT1', img: '/certifications/pt1-clean.png' },
-  { name: 'FCA', img: '/certifications/fortinet-fca-clean.png' },
+  { name: 'CNSP', img: '/certifications/cnsp.png' },
+  { name: 'ICCA', img: '/certifications/icca.png' },
+  { name: 'Fortinet NSE', img: '/certifications/fortinet-fca-clean.png' },
+]
+
+const vendors = [
+  { name: 'Kaspersky', img: '/certifications/kaspersky.png' },
   { name: 'SentinelOne', img: '/certifications/sentinelone-dark.png' },
   { name: 'Trend Micro', img: '/certifications/trendmicro-dark.png' },
-  { name: 'Kaspersky', img: '/certifications/kaspersky.png' },
   { name: 'Wazuh', img: '/certifications/wazuh.png' },
   { name: 'Red Hat', img: '/certifications/redhat-dark.png' },
   { name: 'Microsoft', img: '/certifications/microsoft.png' },
-  { name: 'Zecurion', img: '/certifications/zecurion.png' }
+  { name: 'Zecurion', img: '/certifications/zecurion.png' },
 ]
+
+function Badge({ b }) {
+  return (
+    <div className="slider-item flex shrink-0 items-center justify-center rounded-xl border border-white/[.06] bg-card px-5 py-4 transition-all duration-300 hover:border-accent/30 hover:bg-[#151f2e]">
+      <img
+        src={b.img}
+        alt={b.name}
+        loading="lazy"
+        className="h-12 w-auto object-contain opacity-70 grayscale-[.2] transition-all duration-300 hover:opacity-100 hover:grayscale-0 sm:h-14"
+      />
+    </div>
+  )
+}
 
 export default function Certifications() {
   const r = useReducedMotion()
 
+  const certTrack = [...certs, ...certs, ...certs]
+  const vendorTrack = [...vendors, ...vendors, ...vendors]
+
   return (
-    <section id="certs" className="section-rule py-16 lg:py-20">
+    <section id="certs" className="section-rule py-16 lg:py-20 overflow-hidden">
       {/* ── header ─────────────────────────────────────── */}
       <div className="text-center">
         <p className="eyebrow">05 / Credentials</p>
@@ -30,31 +51,28 @@ export default function Certifications() {
         </p>
       </div>
 
-      {/* ── badge grid ─────────────────────────────────── */}
-      <div className="mt-10 grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-5">
-        {badges.map((b, i) => (
-          <motion.div
-            key={b.name}
-            initial={r ? {} : { opacity: 0, y: 12 }}
-            whileInView={r ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.04, duration: 0.2, ease: EASE }}
-            className="group flex aspect-square items-center justify-center rounded-xl border border-white/[.06] bg-card px-4 py-5 transition-all duration-300 hover:border-accent/30 hover:bg-[#151f2e]"
-          >
-            {b.img ? (
-              <img
-                src={b.img}
-                alt={b.name}
-                loading="lazy"
-                className="max-h-full max-w-full object-contain opacity-70 grayscale-[.2] transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
-              />
-            ) : (
-              <span className="font-heading text-lg font-bold text-white/60 transition-colors duration-300 group-hover:text-white/90 sm:text-xl">
-                {b.name}
-              </span>
-            )}
-          </motion.div>
-        ))}
+      {/* ── certifications slider ──────────────────────── */}
+      <div className="mt-10">
+        <p className="mb-3 text-center font-mono text-[10px] uppercase tracking-widest text-accent">Certifications</p>
+        <div className="relative">
+          <div className={`slider-track flex gap-4 ${r ? '' : 'animate-scroll'}`}>
+            {certTrack.map((b, i) => (
+              <Badge key={`cert-${i}`} b={b} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── technology partners slider ─────────────────── */}
+      <div className="mt-6">
+        <p className="mb-3 text-center font-mono text-[10px] uppercase tracking-widest text-muted">Technology Partners</p>
+        <div className="relative">
+          <div className={`slider-track flex gap-4 ${r ? '' : 'animate-scroll-reverse'}`}>
+            {vendorTrack.map((b, i) => (
+              <Badge key={`vendor-${i}`} b={b} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

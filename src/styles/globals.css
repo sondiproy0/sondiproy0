@@ -107,6 +107,38 @@ button, a, input, textarea {
   animation: shimmer 8s linear infinite;
 }
 
+/* ── Certifications slider ──────────────────────────── */
+.slider-track {
+  width: max-content;
+}
+.slider-item {
+  width: 160px;
+  height: 80px;
+}
+@media (min-width: 640px) {
+  .slider-item { width: 180px; height: 90px; }
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+@keyframes scroll-reverse {
+  0% { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+.animate-scroll-reverse {
+  animation: scroll-reverse 30s linear infinite;
+}
+.animate-scroll-reverse:hover {
+  animation-play-state: paused;
+}
+
 /* ── SecurityExpertise topology ───────────────────────── */
 .t-line{stroke-dasharray:5 15;animation:dash 1.5s linear infinite}
 .t-pulse{animation:pulse 3s ease-in-out infinite}

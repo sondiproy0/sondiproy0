@@ -12,12 +12,14 @@ const roles = [
     location: 'Dhaka',
     logo: 'BL',
     impact: 'Leading a practical, enterprise-wide detection and response program.',
-    tech: ['Kaspersky EDR', 'Wazuh', 'MITRE ATT&CK', 'Nessus', 'OWASP'],
+    tech: ['Kaspersky EDR', 'Wazuh', 'SonarQube', 'Burp Suite', 'AppAcuity', 'MITRE ATT&CK'],
     achievements: [
       'Rolled out Kaspersky EDR Expert across 815 endpoints in 16 SBUs — authoring security policies, exclusions, and response playbooks for each risk profile.',
       'Operate and tune Wazuh SIEM detections; investigate alerts, reduce false positives, and maintain actionable detection logic and response runbooks.',
+      'Integrated SonarQube (SAST) and Burp Suite (DAST) to surface hard-coded secrets, vulnerable dependencies, and OWASP Top 10 flaws.',
+      'Assessed cloud security posture with AppAcuity CTEM/CSPM, prioritizing misconfiguration risks and recommending remediation.',
       'Triaged 100+ phishing and malware IOCs each month using sandbox analysis, then mapped detection coverage to MITRE ATT&CK.',
-      'Conduct web, network, Active Directory, and code-security assessments using OWASP Top 10, PTES, Nessus, and manual validation.'
+      'Investigated compromised WordPress sites — identifying webshells, backdoors, and attack vectors while delivering root-cause analysis.'
     ],
     current: true
   },
@@ -29,11 +31,12 @@ const roles = [
     location: 'Dhaka',
     logo: 'NL',
     impact: 'Strengthening the foundations that make secure access possible.',
-    tech: ['Active Directory', 'Group Policy', 'Windows Server', 'Nessus'],
+    tech: ['Active Directory', 'Group Policy', 'Windows Server', 'Nessus', 'IAM'],
     achievements: [
       'Managed 250+ Active Directory user accounts, group structures, OUs, provisioning/de-provisioning, and delegated administration.',
-      'Implemented password, account lockout, GPO, access control, and firewall policies to improve enterprise identity hygiene.',
-      'Assessed Windows Server and endpoint environments, applied hardening baselines, and validated remediation through follow-up reviews.'
+      'Configured password policies, account lockout, GPO, access controls, and firewall rules to strengthen enterprise identity hygiene.',
+      'Applied Windows Server hardening — service restriction, firewall configuration, and security baselines to reduce attack surface.',
+      'Conducted vulnerability assessments on Windows Server and endpoint systems, validated remediation through follow-up reviews.'
     ],
     current: false
   }
