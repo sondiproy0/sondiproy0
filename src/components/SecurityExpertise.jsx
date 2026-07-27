@@ -109,7 +109,7 @@ export default function SecurityExpertise() {
       </div>
 
       {/* ── topology + detail (side by side on desktop) ────── */}
-      <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_340px]">
+      <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_420px]">
         {/* SVG topology */}
         <div>
           <svg
@@ -234,7 +234,7 @@ export default function SecurityExpertise() {
         </div>
 
         {/* ── detail panel (right column) ──────────────────── */}
-        <div className="flex items-start">
+        <div className="flex h-full items-stretch">
           <AnimatePresence mode="wait">
             {active ? (
               <motion.div
@@ -243,26 +243,26 @@ export default function SecurityExpertise() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={reduced ? {} : { opacity: 0, x: -8 }}
                 transition={{ duration: 0.2, ease: EASE }}
-                className="w-full rounded-card-lg border border-white/10 bg-surface/80 p-5 backdrop-blur-xl"
+                className="flex w-full flex-col rounded-card-lg border border-white/10 bg-surface/80 p-6 backdrop-blur-xl"
               >
                 {/* title row */}
                 <div className="flex items-start justify-between gap-3">
-                  <h3 className="font-heading text-base font-semibold text-white">{active.label}</h3>
-                  <span className="shrink-0 rounded-full border border-accent/25 bg-accent/10 px-2 py-0.5 font-mono text-[9px] font-semibold text-accent">
+                  <h3 className="font-heading text-lg font-semibold text-white">{active.label}</h3>
+                  <span className="shrink-0 rounded-full border border-accent/25 bg-accent/10 px-2.5 py-1 font-mono text-[9px] font-semibold text-accent">
                     {active.certification}
                   </span>
                 </div>
 
-                <p className="mt-1.5 text-xs leading-5 text-muted">{active.description}</p>
+                <p className="mt-2 text-sm leading-6 text-muted">{active.description}</p>
 
                 <div className="mt-1 font-mono text-[9px] text-muted/60">{active.experience}</div>
 
                 {/* skills */}
-                <div className="mt-4">
-                  <p className="font-mono text-[9px] uppercase tracking-badge-lg text-muted">Skills</p>
-                  <div className="mt-1.5 flex flex-wrap gap-1">
+                <div className="mt-5">
+                  <p className="font-mono text-[10px] uppercase tracking-badge-lg text-muted">Skills</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
                     {active.skills.map(s => (
-                      <span key={s} className="rounded-full border border-white/[.08] bg-white/[.04] px-2 py-0.5 text-[10px] leading-3 text-text-secondary">
+                      <span key={s} className="rounded-full border border-white/[.08] bg-white/[.04] px-2.5 py-1 text-[11px] leading-3 text-text-secondary">
                         {s}
                       </span>
                     ))}
@@ -270,11 +270,11 @@ export default function SecurityExpertise() {
                 </div>
 
                 {/* tools */}
-                <div className="mt-3.5">
-                  <p className="font-mono text-[9px] uppercase tracking-badge-lg text-muted">Tools</p>
-                  <div className="mt-1.5 flex flex-wrap gap-1">
+                <div className="mt-5">
+                  <p className="font-mono text-[10px] uppercase tracking-badge-lg text-muted">Tools</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
                     {active.tools.map(t => (
-                      <span key={t} className="rounded-full border border-accent/[.12] bg-accent/[.06] px-2 py-0.5 font-mono text-[10px] leading-3 text-accent/80">
+                      <span key={t} className="rounded-full border border-accent/[.12] bg-accent/[.06] px-2.5 py-1 font-mono text-[11px] leading-3 text-accent/80">
                         {t}
                       </span>
                     ))}
@@ -282,11 +282,11 @@ export default function SecurityExpertise() {
                 </div>
 
                 {/* projects */}
-                <div className="mt-3.5">
-                  <p className="font-mono text-[9px] uppercase tracking-badge-lg text-muted">Related projects</p>
-                  <div className="mt-1.5 flex flex-wrap gap-1">
+                <div className="mt-5">
+                  <p className="font-mono text-[10px] uppercase tracking-badge-lg text-muted">Related projects</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
                     {active.projects.map(p => (
-                      <span key={p} className="flex items-center gap-1.5 rounded-md border border-white/[.08] bg-white/[.04] px-2 py-0.5 text-[10px] leading-3 text-text-secondary">
+                      <span key={p} className="flex items-center gap-1.5 rounded-md border border-white/[.08] bg-white/[.04] px-2.5 py-1 text-[11px] leading-3 text-text-secondary">
                         <span className="h-1 w-1 shrink-0 rounded-full bg-accent/60" />
                         {p}
                       </span>
