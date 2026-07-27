@@ -13,8 +13,6 @@ const badges = [
   { name: 'Wazuh', img: '/certifications/wazuh.png' },
   { name: 'Red Hat', img: '/certifications/redhat-dark.png' },
   { name: 'Microsoft', img: null },
-  { name: 'Metasploit', img: '/certifications/metasploit.webp' },
-  { name: 'Tenable', img: '/certifications/tenable.png' },
   { name: 'Zecurion', img: '/certifications/zecurion.png' }
 ]
 
@@ -33,7 +31,7 @@ export default function Certifications() {
       </div>
 
       {/* ── badge grid ─────────────────────────────────── */}
-      <div className="mt-10 grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-6">
+      <div className="mt-10 grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-5">
         {badges.map((b, i) => (
           <motion.div
             key={b.name}
