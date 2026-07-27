@@ -1,16 +1,6 @@
 import React from 'react'
 import { motion, useReducedMotion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
-const expertise = [
-  { label: 'Web Security', x: -10, y: 8 },
-  { label: 'Application Security', x: 88, y: 5 },
-  { label: 'Cloud Security', x: -14, y: 32 },
-  { label: 'Threat Detection', x: 90, y: 28 },
-  { label: 'Detection Engineering', x: -8, y: 56 },
-  { label: 'Active Directory', x: 86, y: 56 },
-  { label: 'Infrastructure', x: 30, y: 92 },
-]
-
 const EASE = [0.22, 1, 0.36, 1]
 
 export default function Hero() {
@@ -132,24 +122,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ── floating expertise tags ──────────────── */}
-        {expertise.map((b, i) => (
-          <motion.span
-            key={b.label}
-            aria-hidden="true"
-            initial={reduced ? false : { opacity: 0, scale: 0.85, y: 6 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={reduced ? { duration: 0 } : { delay: 0.2 + i * 0.06, duration: 0.2, ease: EASE }}
-            className="absolute rounded-full border border-accent/25 bg-surface/90 px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-badge-sm text-accent shadow-glow backdrop-blur-md"
-            style={{
-              left: `${b.x}%`,
-              top: `${b.y}%`,
-              animation: reduced ? 'none' : `float-soft 6s ease-in-out ${i * 0.5}s infinite`,
-            }}
-          >
-            {b.label}
-          </motion.span>
-        ))}
+        {/* ── quote ──────────────────────── */}
+        <motion.p
+          initial={reduced ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.2, delay: 0.2, ease: EASE }}
+          className="mt-5 text-center font-mono text-xs tracking-wide text-muted/50"
+          aria-hidden="true"
+        >
+          "Assume breach."
+        </motion.p>
       </motion.div>
     </section>
   )
