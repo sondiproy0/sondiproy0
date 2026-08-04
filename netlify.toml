@@ -12,3 +12,8 @@
   X-Frame-Options = "SAMEORIGIN"
   X-Content-Type-Options = "nosniff"
   Referrer-Policy = "no-referrer-when-downgrade"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

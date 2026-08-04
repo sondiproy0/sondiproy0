@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion, useReducedMotion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 const EASE = [0.22, 1, 0.36, 1]
@@ -71,12 +72,12 @@ export default function Hero() {
           transition={{ duration: 0.2, delay: 0.12, ease: EASE }}
           className="mt-10 flex flex-wrap items-center gap-3"
         >
-          <button
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+          <Link
+            to="/projects"
             className="rounded-xl bg-accent px-6 py-3.5 text-sm font-bold text-page transition-colors duration-200 hover:-translate-y-0.5 hover:bg-accent2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-page"
           >
             View selected work
-          </button>
+          </Link>
           <a
             href="/resume.pdf"
             className="rounded-xl border border-white/15 px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-page"

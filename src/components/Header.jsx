@@ -1,52 +1,33 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 
 const links = [
-  { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'skills', label: 'Capabilities' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'certs', label: 'Credentials' }
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/projects', label: 'Projects' },
+  { path: '/contact', label: 'Contact' }
 ]
 
 export default function Header() {
-  const [active, setActive] = React.useState('about')
+  const location = useLocation()
   const [open, setOpen] = React.useState(false)
   const [scrolled, setScrolled] = React.useState(false)
   const navRef = React.useRef(null)
   const reduced = useReducedMotion()
 
-  /* ── scroll spy ──────────────────────────────────────────── */
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
-        if (visible.length) setActive(visible[0].target.id)
-      },
-      { rootMargin: '-20% 0px -70%', threshold: [0, 0.15, 0.3, 0.6, 1] }
-    )
-    links.forEach(({ id }) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
-    })
-    return () => observer.disconnect()
-  }, [])
+  const active = links.find(l => l.path === location.pathname)?.path || '/'
 
-  /* ── scroll-aware glass intensity ───────────────────────── */
+  React.useEffect(() => {
+    setOpen(false)
+  }, [location.pathname])
+
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const go = id => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-    setOpen(false)
-  }
-
-  /* ── keyboard navigation ────────────────────────────────── */
   const handleNavKey = (e, index) => {
     const btns = navRef.current?.querySelectorAll('[data-nav]')
     if (!btns?.length) return
@@ -76,13 +57,13 @@ export default function Header() {
     >
       <div className="flex items-center justify-between px-4 py-3 sm:px-6">
         {/* ── logo ──────────────────────────────────── */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        <Link
+          to="/"
           className="relative z-10 -ml-2 rounded-lg px-2 py-1 font-heading text-lg font-bold tracking-tight text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
-          aria-label="Scroll to top"
+          aria-label="Go to homepage"
         >
           SR<span className="text-accent">/</span>
-        </button>
+        </Link>
 
         {/* ── desktop nav ───────────────────────────── */}
         <nav
@@ -91,23 +72,22 @@ export default function Header() {
           className="relative hidden items-center gap-0.5 md:flex"
         >
           {links.map((link, i) => (
-            <button
-              key={link.id}
-              data-nav={link.id}
-              onClick={() => go(link.id)}
+            <Link
+              key={link.path}
+              to={link.path}
+              data-nav={link.path}
               onKeyDown={e => handleNavKey(e, i)}
-              aria-current={active === link.id ? 'true' : undefined}
+              aria-current={active === link.path ? 'page' : undefined}
               className={`relative z-10 rounded-lg px-3.5 py-2 text-[13px] font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface ${
-                active === link.id
+                active === link.path
                   ? 'text-white'
                   : 'text-muted hover:text-white'
               }`}
             >
               {link.label}
-            </button>
+            </Link>
           ))}
 
-          {/* sliding active indicator */}
           <ActiveIndicator navRef={navRef} active={active} reduced={reduced} />
         </nav>
 
@@ -163,26 +143,29 @@ export default function Header() {
           >
             <div className="space-y-0.5 px-3 pb-3 pt-2">
               {links.map((link, i) => (
-                <motion.button
-                  key={link.id}
+                <motion.div
+                  key={link.path}
                   initial={reduced ? false : { x: -12, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={reduced ? { duration: 0 } : { delay: i * 0.04, duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                  onClick={() => go(link.id)}
-                  aria-current={active === link.id ? 'true' : undefined}
-                  className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface ${
-                    active === link.id
-                      ? 'bg-white/10 text-white'
-                      : 'text-muted hover:bg-white/5 hover:text-white'
-                  }`}
                 >
-                  <span
-                    className={`h-1 w-1 rounded-full bg-accent transition-opacity duration-200 ${
-                      active === link.id ? 'opacity-100' : 'opacity-0'
+                  <Link
+                    to={link.path}
+                    aria-current={active === link.path ? 'page' : undefined}
+                    className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface ${
+                      active === link.path
+                        ? 'bg-white/10 text-white'
+                        : 'text-muted hover:bg-white/5 hover:text-white'
                     }`}
-                  />
-                  {link.label}
-                </motion.button>
+                  >
+                    <span
+                      className={`h-1 w-1 rounded-full bg-accent transition-opacity duration-200 ${
+                        active === link.path ? 'opacity-100' : 'opacity-0'
+                      }`}
+                    />
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </motion.nav>
@@ -192,7 +175,6 @@ export default function Header() {
   )
 }
 
-/* ── sliding pill indicator ──────────────────────────────────── */
 function ActiveIndicator({ navRef, active, reduced }) {
   const [style, setStyle] = React.useState({ left: 0, width: 0, opacity: 0 })
 
